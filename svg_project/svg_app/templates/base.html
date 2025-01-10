@@ -1,0 +1,14 @@
+<!-- templates/svg_app/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Example</title>
+</head>
+<body>
+    <h1>Пример вставки SVG</h1>
+    {% load svg_inserter %}
+    {% include_svg "example.svg" class="example-class" id="example-id" %}
+</body>
+</html>
